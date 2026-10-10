@@ -1,0 +1,146 @@
+/* Thiết lập chung và căn giữa trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+#main {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Định dạng Header */
+header {
+    height: 100px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Định dạng Nav */
+nav {
+    background-color: #34495e;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Xử lý float cho các cột bên trong */
+.content-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Định dạng Aside trái (Left Sidebar) */
+.left-sidebar {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #ecf0f1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.left-sidebar h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.left-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.left-sidebar ul li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.left-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Định dạng Section (Main Content) */
+#main-content {
+    width: 540px;
+    min-height: 400px;
+    float: left;
+    background-color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#main-content h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Định dạng Aside phải (Right Sidebar) */
+.right-sidebar {
+    width: 220px;
+    min-height: 400px;
+    float: right;
+    background-color: #ecf0f1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.right-sidebar h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Định dạng Footer */
+footer {
+    clear: both;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
